@@ -87,4 +87,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<!--将项目发布到私服中-->
+	<distributionManagement>
+		<repository>
+			<id>kitten-releases</id>
+			<name>kitten-releases</name>
+			<url>http://58.87.69.160:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>kitten-snapshots</id>
+			<name>kitten-snapshots</name>
+			<url>http://58.87.69.160:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
